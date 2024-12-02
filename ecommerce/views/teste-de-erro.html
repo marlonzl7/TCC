@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Templates</title>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script type="module" src="../functions/templates.js"></script>
+</head>
+<body>
+  <button id="testError">Test Error</button>
+  <button id="testSuccess">Test Success</button>
+  <script type="module">
+    import { errorGeral, sucessoGeral } from "../functions/templates.js";
+
+    document.getElementById("testError").addEventListener("click", () => {
+      errorGeral("Testando erro!");
+    });
+
+    document.getElementById("testSuccess").addEventListener("click", () => {
+      sucessoGeral("Testando sucesso!");
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #090D59;
+    font-family: montserrat;
+}
+
+h2 {
+    font-size: 1.35rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 800px;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.login {
+    height: 100%;
+    background: #f7f7fa;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    padding: 5%;
+}
+
+.login-header img {
+    width: 100%;
+    margin: 20% 0 15% 0;
+}
+
+.login-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.2rem;
+    margin-bottom: 5%;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-box-label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.input-box-label img {
+    margin-right: 0.25rem;
+}
+
+.input-box-label label {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.input-box input {
+    width: 550px;
+    min-width: 30vw;
+    height: 5vh;
+    margin-bottom: 1.25rem;
+    padding: 0.8rem 1.2rem;
+    border: 1px solid #989EA6;
+    border-radius: 8px;
+}
+
+.input-box input:hover {
+    border: 1px solid #151B8C;
+    box-shadow: 0px 0px 2px #8A8EE5;
+}
+
+.input-box input:focus-visible {
+    outline: 1px solid #151B8C;
+}
+
+
+.esqueceu-senha {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.esqueceu-senha a {
+    text-align: center;
+    color: #090D59;
+    font-size: 0.95rem;
+    font-weight: 400;
+}
+
+.esqueceu-senha a:hover {
+    text-decoration: underline;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem 0;
+}
+
+.cadastrar-button button {
+    border: none;
+    background: none;
+}
+
+.btn-cadastrar {
+    color: #090D59;
+    font-size: 1rem;
+    font-weight: 600;
+    background: transparent;
+    border: 1px solid #090D59;
+    border-radius: 8px;
+    padding: 0.75rem 2.5rem;
+}
+
+.btn-login {
+    color: #f2f2fa;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    background: linear-gradient(#030AA6, #0A0E72, #101240);
+    padding: 0.75rem 3rem;
+    cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+    .container {
+        width: 80vw;
+    }
+    .input-box input {
+        width: 55vw;
+    }
+    .buttons {
+        gap: 2rem;
+    }
+    .btn-cadastrar {
+        font-size: 0.9rem;
+        padding: 0.75rem 1.75rem;
+    }
+    .btn-login {
+        font-size: 0.9rem;
+        padding: 0.75rem 1.75rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 90vw;
+        height: 90vh;
+    }
+    .login-header img {
+        width: 50vw;
+        min-width: 250px;
+    }
+    h2 {
+        font-size: 1.2rem;
+    }
+    
+    h3 {
+        font-size: 0.9rem;
+    }
+    .input-box {
+        justify-content: center;
+    }
+    .input-box input {
+        width: 70vw;
+        min-width: 250px;
+    }
+}
+
+@media (max-width: 400px) {
+    body {
+        align-items: start;
+    }
+    .login-header img {
+        margin: 20% 0 20% 0;
+    }
+    .login-title {
+        margin-bottom: 10%;
+    }
+    .container {
+        margin-top: 0.5rem;
+        width: 90vw;
+        height: 95vh;
+    }
+    .input-box input {
+        width: 80vw;
+    }
+    .esqueceu-senha a {
+        font-size: 0.9rem;
+    }
+    .buttons {
+        margin-bottom: 2rem;
+    }
+    .btn-cadastrar {
+        font-size: 0.75rem;
+        padding: 0.75rem 1rem;
+    }
+    .btn-login {
+        font-size: 0.75rem;
+        padding: 0.75rem 1rem;
+    }
+}

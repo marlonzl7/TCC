@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    background: #F7F7FA;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #f2f2fa;
+}
+
+.menu {
+    background: #010440;
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 10% 0 5%;
+}
+
+.busca input {
+    height: 5vh;
+    width: 30vw;
+    padding: 0.8rem 1.2rem;
+    border-radius: 8px;
+    border: 1px solid #F0F0F5;
+    color: #4C4C4C;
+}
+
+.busca input:focus-visible {
+    border: 1px solid #151B8C;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    gap: 5vw;
+}
+
+.nav a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.nav-itens {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/*menu*/
+.dp-menu ul {
+    background-color: #090D59;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.dp-menu ul a {
+    color: #f2f2fa;
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.dp-menu ul li{
+    display: inline;
+    position: relative;
+}
+
+.dp-menu ul li a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    width: 120px;
+}
+
+.a2{
+    text-align: center;
+    width: 100px;
+}
+
+.dp-menu ul li a:hover {
+    transition: 0.5s;
+    background-color: #010440;
+    
+}
+
+/*sub menu*/
+.dp-menu ul ul{
+    display: none;
+    position: absolute;
+}
+
+.dp-menu ul li:hover ul{
+    display: block;
+}
+
+.dp-menu ul ul{
+    width: 120px;
+}
+
+.dp-menu ul ul li a {
+    display: block;
+}
+
+#Select {
+    width: 120px;
+}
+
+/*Produtos indisponíveis*/
+.produtos-indisponiveis h2 {
+    color: #333;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+/*section - produtos*/
+
+/*paginacao*/
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.table-container {
+    margin: 20px;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+#pagination-controls {
+    margin: 20px;
+    text-align: center;
+}
+
+.pagination-button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.pagination-button.active {
+    background-color: #151B8C;
+}
+
+.pagination-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+

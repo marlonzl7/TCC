@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #090D59;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    width: 50vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #f2f2fa;
+    border-radius: 8px;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+    margin-bottom: 10%;
+}
+
+.title h2 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 10%;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-box-label {
+    display: flex;
+    align-items: center;
+}
+
+.input-box-label img {
+    margin-right: 0.1rem;
+}
+
+.input-box-label label {
+    font-weight: 600;
+}
+
+.input-box input {
+    padding: 0.8rem 1.2rem;
+    width: 25vw;
+    height: 5vh;
+    border: 1px solid #989EA6;
+    border-radius: 8px;
+}
+
+.input-box input:hover {
+    border: 1px solid #151B8C;
+    box-shadow: 0px 0px 2px #8A8EE5;
+}
+
+.input-box input:focus-visible {
+    outline: 1px solid #151B8C;
+}
+
+
+.senha_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15%;
+}
+
+.btn_senha {
+    background: linear-gradient(#030AA6, #0A0E72, #101240);
+    color: #f2f2fa;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.75rem 3rem;
+    cursor: pointer;
+}

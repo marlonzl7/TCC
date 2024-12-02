@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import '../../functions/script_pagamento.js';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#header{
+    background-color: #010440;
+    height: 10vh;
+    width: auto;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#marca{
+    width: 10%;
+}
+
+.titulo {
+    height: fit-content;
+    width: auto;
+    display: flex;
+    margin-top: 3.5%;
+    text-align: center;
+    justify-content: center;
+}
+
+.tituloTexto{
+    font-size: 180%;
+    font-weight: 600;
+    color: #010440;
+}
+
+.barra{
+    height: fit-content;
+    width: auto;
+    margin-top: 2%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.barraIMG{
+    width: 35%;
+}
+
+.informacoesFundo{
+    height: fit-content;
+    width: auto;
+    margin-top: 4%;
+    display: flex;
+    justify-content: center;
+}
+
+.informacoes{
+    height: fit-content;
+    width: 600px;
+    border-color: #8d8989;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 7px ;
+    background-color: rgb(255, 255, 255);
+    padding: 2%;
+    text-align: center;
+}
+
+
+.tituloTopicos{
+    font-weight: 700;
+    color: #010440;
+}
+
+#caixaTopicos{
+    margin-top: 6%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.topico{
+    align-content: baseline;
+    margin-bottom: 5%;
+    list-style: none;
+}
+
+.nomeTopico{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2%;
+}
+
+.nomeTitulo{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+.texto{
+    font-weight: 600;
+    color: #010440;
+    margin-left: 2.5%;
+}
+
+.caixaTopico {
+    padding: 0.8rem 1.2rem;
+    width: 100%;
+    height: 5vh;
+    background-color: #eaebee;
+    border: 1px solid #989EA6;
+    border-radius: 8px;
+    text-align: left ;
+}
+
+.textTopico {
+    font-weight: 700;
+    font-size: 20px;
+    color: #111111;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#caixaSelecionaPagamento{
+    overflow: hidden;
+}
+
+#caixaSelecionaTipo{
+    height: 5vb;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    display: flex;
+    gap: 1px;
+}
+
+#caixaSelecionaCartao{
+    overflow: hidden;
+    visibility: hidden;
+    height: 0;
+}
+
+#caixaSelecionaBoleto{
+    overflow: hidden;
+    visibility: hidden;
+    height: 0;
+}
+
+#caixaSelecionaPix{
+    overflow: hidden;
+    visibility: hidden;
+    height: 0;
+}
+
+#caixaSelecionaPaypal{
+    overflow: hidden;
+    visibility: hidden;
+    height: 0;
+}
+
+.caixaSeparacao{
+    display: flex;
+    height: 10vb;
+    width: 100%;
+    gap: 5px;
+}
+
+#formaCartao{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 0.8rem 1.2rem;
+    width: 25vw;
+    height: 5vh;
+    background-color: #eaebee;
+    border: 1px solid #989EA6; 
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 17px;
+    color: #1b1b1d;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.caixaTipo{
+    height: auto;
+    width: 25%;
+    align-content: center;
+    justify-content: center;
+}
+
+.caixaSeparacao li{
+    width: 50%;
+}
+
+table {
+    width: 30vw;
+    border-collapse: collapse;
+}
+
+table thead {
+    background-color: #f1f1f1;
+}
+
+table th {
+    text-align: left;
+    padding: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+table th:nth-child(2),
+table td:nth-child(2) {
+    text-align: end; /* Alinha o subtotal */
+}
+
+table tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    vertical-align: middle;
+}
+
+table tbody td img {
+    width: 60px;
+    height: auto;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+table tbody td p {
+    display: block;
+}
+
+table tbody td p:first-of-type {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+}
+
+table tbody td p:last-of-type {
+    font-size: 14px;
+    color: #777;
+}
+
+table tbody td:last-of-type {
+    text-align: right;
+    font-size: 16px;
+    color: #333;
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+}
+
+.desc-produto {
+    display: flex;
+    flex-direction: column;
+}
+
+.total {
+    width: 30vw;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 4px;
+    color: #333;
+}
+
+
+.topico select {
+    padding: 0.8rem 1.2rem;
+    width: 100%;
+    height: 5vh;
+    background-color: #eaebee;
+    border: 1px solid #989EA6; 
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 17px;
+    color: #1b1b1d;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.topico input {
+    padding: 0.8rem 1.2rem;
+    width: 100%;
+    height: 5vh;
+    background-color: #eaebee;
+    border: 1px solid #989EA6; 
+    border-radius: 8px;
+}
+
+.topico input::placeholder {
+    font-weight: 500;
+    font-size: 17px;
+    color: #626263;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.topico input:hover {
+    border: 1px solid #151B8C;
+    box-shadow: 0px 0px 2px #8A8EE5;
+}
+
+.topico input:focus-visible {
+    outline: 1px solid #151B8C;
+}
+
+#caixaBotoes{
+    width: auto;
+    height: fit-content;
+    margin-left: 32%;
+    margin-right: 32%;
+    margin-top: 1%;
+    margin-bottom: 4%;
+    display: flex;
+    justify-content: end;
+}
+
+.btnPaypal {
+    background-image: linear-gradient(to bottom, #c1c3e7, #80819e);
+    margin-top: 15%;
+    width:  auto;
+    height: fit-content;
+    padding: 2% ;
+    border: transparent;
+    border-radius: 8px;
+    margin-right: 2%;
+    cursor: pointer;
+}
+
+.btnProsseguir {
+    background-color: #090D59;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 0.95rem;
+    padding: 0.5rem 0.85rem;
+    border-radius: 8px;
+    color: #F7F7FA;
+    margin-right: 2%;
+}
+
+.btnVoltar {
+    background-color: #727273;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 0.95rem;
+    padding: 0.5rem 0.85rem;
+    border-radius: 8px;
+    color: #F7F7FA;
+    margin-right: 2%;
+}
+
+.btnPadrao {
+    background-color: #727273;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 0.95rem;
+    padding: 0.5rem 0.85rem;
+    border-radius: 8px;
+    color: #F7F7FA;
+    margin-right: 2%;
+}
