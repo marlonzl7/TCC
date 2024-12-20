@@ -120,27 +120,27 @@ create table Pagamento (
 -- 2 = Camisas
 -- 3 = Calças
 
-insert into categoria (nome_categoria) values ('Moletom');
-insert into categoria (nome_categoria) values ('Camisa');
-insert into categoria (nome_categoria) values ('Calça');
-insert into categoria (nome_categoria) values ('Bicicleta');
+insert into Categoria (nome_categoria) values ('Moletom');
+insert into Categoria (nome_categoria) values ('Camisa');
+insert into Categoria (nome_categoria) values ('Calça');
+insert into Categoria (nome_categoria) values ('Bicicleta');
 
-insert into produto (nome_categoria, nome, descricao, preco, qtd_em_estoque, url) values ('Moletom', 'Moletom Blook', 'Blusa Moletom Blook 100% algodão', 199.99, 100, '/tcc/ecommerce/assets/images/produtos/Moletom-Blook.jpg');
-insert into produto (nome_categoria, nome, descricao, preco, colecao, qtd_em_estoque, url) values ('Calça', 'Kit 3 Calças Moletom Blook', 'Kit com 3 Calças Moletom Blook', 159.99, 3, 100, '/tcc/ecommerce/assets/images/produtos/Kit-3-Calças-Moletom-Blook.jpg');
-insert into produto (nome_categoria, nome, descricao, preco, colecao, qtd_em_estoque, url) values ('Camisa', 'Kit 3 Camisas Connect', 'Kit com 3 Camisas Connect 100% algodão', 199.99, 2, 100, '/tcc/ecommerce/assets/images/produtos/Kit-3-Camisas-Connect.jpg');
-insert into produto (nome_categoria, nome, descricao, preco, colecao, qtd_em_estoque, url) values ('Camisa', 'Kit 3 Camisas Básicas Blook', 'Kit com 3 camisas básicas da Blook', 149.99, 2, 100, '/tcc/ecommerce/assets/images/produtos/Kit-3-Camisas-Básicas-Blook.jpg');
-insert into produto (nome_categoria, nome, descricao, preco, qtd_em_estoque, url) values ('Moletom', 'Moletom Vermelho Feminino', 'Moletom Feminino Vermelho ', 109.99, 100, '/tcc/ecommerce/assets/images/produtos/Moletom-Vermelho-Feminino.jpg');
-insert into produto (nome_categoria, nome, descricao, preco, qtd_em_estoque, url) values ('Camisa', 'Camisa TaySon Branca', 'Camisa Branca TaySon ', 99.99, 100, '/tcc/ecommerce/assets/images/produtos/Camisa-TaySon-Branca.jpg');
-insert into produto (nome_categoria, nome, descricao, preco, qtd_em_estoque, url) values ('Camisa', 'Camisa TaySon Preta', 'Camisa Preta TaySon ', 99.99, 100, '/tcc/ecommerce/assets/images/produtos/Camisa-TaySon-Preta.jpg');
+insert into Produto (nome_categoria, nome, descricao, preco, qtd_em_estoque, url) values ('Moletom', 'Moletom Blook', 'Blusa Moletom Blook 100% algodão', 199.99, 100, '/tcc/ecommerce/assets/images/produtos/Moletom-Blook.jpg');
+insert into Produto (nome_categoria, nome, descricao, preco, colecao, qtd_em_estoque, url) values ('Calça', 'Kit 3 Calças Moletom Blook', 'Kit com 3 Calças Moletom Blook', 159.99, 3, 100, '/tcc/ecommerce/assets/images/produtos/Kit-3-Calças-Moletom-Blook.jpg');
+insert into Produto (nome_categoria, nome, descricao, preco, colecao, qtd_em_estoque, url) values ('Camisa', 'Kit 3 Camisas Connect', 'Kit com 3 Camisas Connect 100% algodão', 199.99, 2, 100, '/tcc/ecommerce/assets/images/produtos/Kit-3-Camisas-Connect.jpg');
+insert into Produto (nome_categoria, nome, descricao, preco, colecao, qtd_em_estoque, url) values ('Camisa', 'Kit 3 Camisas Básicas Blook', 'Kit com 3 camisas básicas da Blook', 149.99, 2, 100, '/tcc/ecommerce/assets/images/produtos/Kit-3-Camisas-Básicas-Blook.jpg');
+insert into Produto (nome_categoria, nome, descricao, preco, qtd_em_estoque, url) values ('Moletom', 'Moletom Vermelho Feminino', 'Moletom Feminino Vermelho ', 109.99, 100, '/tcc/ecommerce/assets/images/produtos/Moletom-Vermelho-Feminino.jpg');
+insert into Produto (nome_categoria, nome, descricao, preco, qtd_em_estoque, url) values ('Camisa', 'Camisa TaySon Branca', 'Camisa Branca TaySon ', 99.99, 100, '/tcc/ecommerce/assets/images/produtos/Camisa-TaySon-Branca.jpg');
+insert into Produto (nome_categoria, nome, descricao, preco, qtd_em_estoque, url) values ('Camisa', 'Camisa TaySon Preta', 'Camisa Preta TaySon ', 99.99, 100, '/tcc/ecommerce/assets/images/produtos/Camisa-TaySon-Preta.jpg');
 insert into Produto (nome_categoria, nome, descricao, preco, qtd_em_estoque, url) values ('Camisa', 'Camisa OutCast Tiger Branca', 'Camisa Branca da OutCast modelo Tiger', 79.99, 100, '/tcc/ecommerce/assets/images/produtos/Camisa-OutCast-Tiger-Branca.jpg');
 insert into Produto (nome_categoria, nome, descricao, preco, qtd_em_estoque, url) values ('Camisa', 'Camisa OutCast Branca', 'Camisa Branca da OutCast', 79.99, 100, '/tcc/ecommerce/assets/images/produtos/Camisa-OutCast-Branca.jpg');
-insert into produto (nome_categoria, nome, descricao, preco, qtd_em_estoque, url) values ('Camisa', 'Camisa listrada vermelha e preta', 'Camisa listrada vermelha e preta', 60.00, 100, '/tcc/ecommerce/assets/images/produtos/Camisa-listrada-vermelha-e-preta.jpg');
-insert into produto (nome_categoria, nome, descricao, preco, colecao,  qtd_em_estoque, url) values ('Camisa', 'Kit 3 Camisas Polo Premium Blook', 'Kit com 3 Camisas Polo Premium 100% algodão da marca Blook', 249.99, 2, 100, '/tcc/ecommerce/assets/images/produtos/Kit-3-Camisas-Polo-Premium-Blook.jpg');
+insert into Produto (nome_categoria, nome, descricao, preco, qtd_em_estoque, url) values ('Camisa', 'Camisa listrada vermelha e preta', 'Camisa listrada vermelha e preta', 60.00, 100, '/tcc/ecommerce/assets/images/produtos/Camisa-listrada-vermelha-e-preta.jpg');
+insert into Produto (nome_categoria, nome, descricao, preco, colecao,  qtd_em_estoque, url) values ('Camisa', 'Kit 3 Camisas Polo Premium Blook', 'Kit com 3 Camisas Polo Premium 100% algodão da marca Blook', 249.99, 2, 100, '/tcc/ecommerce/assets/images/produtos/Kit-3-Camisas-Polo-Premium-Blook.jpg');
 insert into Produto (nome_categoria, nome, descricao, preco, colecao, qtd_em_estoque, url) values ('Camisa', 'Kit 3 Camisas Polo Simple', 'Camisas Polo Simple nas cores branco, preto e azul', 149.99, 2, 100, '/tcc/ecommerce/assets/images/produtos/Kit-3-Camisas-Polo-Simple.jpg');
-insert into produto (nome_categoria, nome, descricao, preco, qtd_em_estoque, url) values ('Moletom', 'Moletom 705 Preto', 'Moletom Preto 705', 60.00, 100, '/tcc/ecommerce/assets/images/produtos/Moletom-705-Preto.jpg');
-insert into produto (nome_categoria, nome, descricao, preco, qtd_em_estoque, url) values ('Moletom', 'Moletom 705 California', 'Moletom Preto 705 California', 60.00, 100, '/tcc/ecommerce/assets/images/produtos/Moletom-705-California.jpg');
-insert into produto (nome_categoria, nome, descricao, preco, qtd_em_estoque, url) values ('Calça', 'Calça Jeans Blook Azul', 'Calça jeans azul Blook', 60.00, 100, '/tcc/ecommerce/assets/images/produtos/Calça-Jeans-Blook-Azul.jpg');
-insert into produto (nome_categoria, nome, descricao, preco, qtd_em_estoque, url) values ('Calça', 'Calça Jeans Preta', 'Calça Jeans Preta', 75.00, 100, '/tcc/ecommerce/assets/images/produtos/Calça-Jeans-Preta.jpg');
+insert into Produto (nome_categoria, nome, descricao, preco, qtd_em_estoque, url) values ('Moletom', 'Moletom 705 Preto', 'Moletom Preto 705', 60.00, 100, '/tcc/ecommerce/assets/images/produtos/Moletom-705-Preto.jpg');
+insert into Produto (nome_categoria, nome, descricao, preco, qtd_em_estoque, url) values ('Moletom', 'Moletom 705 California', 'Moletom Preto 705 California', 60.00, 100, '/tcc/ecommerce/assets/images/produtos/Moletom-705-California.jpg');
+insert into Produto (nome_categoria, nome, descricao, preco, qtd_em_estoque, url) values ('Calça', 'Calça Jeans Blook Azul', 'Calça jeans azul Blook', 60.00, 100, '/tcc/ecommerce/assets/images/produtos/Calça-Jeans-Blook-Azul.jpg');
+insert into Produto (nome_categoria, nome, descricao, preco, qtd_em_estoque, url) values ('Calça', 'Calça Jeans Preta', 'Calça Jeans Preta', 75.00, 100, '/tcc/ecommerce/assets/images/produtos/Calça-Jeans-Preta.jpg');
 
 -- Conta de admin
 -- senha admin123
