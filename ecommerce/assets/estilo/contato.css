@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background-color: #E8E9F5;
+    font-family: 'Montserrat', sans-serif;
+}
+
+main {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-contato {
+    margin-top: 3.5rem;
+    font-size: 2.5rem;
+    color: #010226;
+}
+
+.container {
+    width: 900px;
+    display: grid;
+    grid-template-columns: 300px 600px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2.5rem;
+    border: 8px;
+    border: 2px solid transparent; 
+    border-radius: 8px; 
+    overflow: hidden; 
+}
+
+.onde-encontrar {
+    height: 50vh;
+    background-color: #010226;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    gap: 4.5rem;
+    color: #F7F7FA;
+    font-weight: 500;
+}
+
+.onde-encontrar h2 {
+    text-align: center;
+    font-size: 1.75rem;
+}
+
+.links {
+    font-size: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.links li::marker {
+    color: #8A8EE5; /* Altera a cor do marcador */
+}
+
+.endereco h3 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.endereco p {
+    font-size: 0.625rem;
+}
+
+.enviar-form {
+    height: 50vh;
+    background-color: #F7F7FA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-group {
+    padding: 1rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.input-group label {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    margin-bottom: 1rem;
+    width: 400px;
+    padding: 0.8rem 1.2rem;
+    border: 1px solid #BDBDBF;
+    border-radius: 8px;
+    background-color: #E8E8EB;
+}
+
+.input-group input:hover {
+    border: 1px solid #151B8C;
+    box-shadow: 0px 0px 2px #8A8EE5;
+}
+
+.input-group input:focus-visible {
+    outline: 1px solid #151B8C;
+}
+
+textarea {
+    width: 400px;
+    border: 1px solid #BDBDBF;
+    border-radius: 8px;
+    background-color: #E8E8EB;
+    padding: 0.8rem 1.2rem;
+}
+
+textarea:hover {
+    border: 1px solid #151B8C;
+    box-shadow: 0px 0px 2px #8A8EE5;
+}
+
+textarea:focus-visible {
+    outline: 1px solid #151B8C;
+}
+
+.btn-enviar {
+    background: #010440;
+    color: #F7F7FA;
+    font-weight: 600;
+    font-size: 0.875rem;
+    margin-top: 1rem;
+    width: 150px;
+    height: 40px;
+    border: transparent;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+@media (max-width: 1050px) {
+    .container {
+        max-width: 900px;
+        width: 90vw;
+        grid-template-columns: 1fr 2fr;
+    }
+    .input-group input {
+        max-width: 400px;
+        width: 40vw;
+    }
+    textarea {
+        max-width: 400px;
+        width: 40vw;
+    }
+}
+
+@media (max-width: 780px) {
+    .titulo-contato {
+        margin-top: 3rem;
+        font-size: 2rem;
+        color: #010226;
+    }
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .enviar-form {
+        max-width: 500px;
+        width: 80vw;
+    }
+    .onde-encontrar {
+        max-width: 500px;
+        width: 80vw;
+    }
+    .input-group input {
+        max-width: 350px;
+        width: 60vw;
+    }
+    textarea {
+        max-width: 350px;
+        width: 60vw;
+    }
+}

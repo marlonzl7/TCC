@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    background-color: #090D59;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 2rem;
+}
+
+.container {
+    background-color: #f7f7fa;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    gap: 2rem;
+}
+
+.head {
+    width: 25vw;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.head h1 {
+    margin-bottom: 0.25rem;
+}
+
+.input-situacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-situacao label {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.input-situacao select {
+    background-color: #E8E8EB;
+    border: 1px solid #A4A4A6;
+    border-radius: 8px;
+    padding: 0.6rem 1.2rem;
+}
+
+.input-situacao select:hover {
+    border: 1px solid #151B8C;
+    box-shadow: 0px 0px 2px #8A8EE5;
+}
+
+.input-situacao select:focus-visible {
+    outline: 1px solid #151B8C;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    margin: 4rem 0;
+}
+
+.button button {
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    padding: 0.75rem 2rem;
+    background-color: #010440;
+    color: #f7f7fa;
+    font-weight: 600;
+}

@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.head h2 {
+    margin: 3rem 0 2rem 0;
+    font-size: 1.75rem;
+    color: #010226;
+}
+
+.head img {
+    margin-bottom: 4rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    padding: 3rem 2rem 0 2rem;
+    background-color: transparent;
+    border: 1px solid #A4A4A6;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.form h3 {
+    font-size: 1.5rem;
+    color: #010226;
+    margin-bottom: 1.5rem;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.input-box input {
+    width: 350px;
+    padding: 0.8rem 1.2rem;
+    border: 1px solid #989EA6;
+    border-radius: 8px;
+}
+
+.input-box-label {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.input-box-label label {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.input-box-label img {
+    margin-right: 0.25rem;
+}
+
+.buttons {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 2rem;
+}
+
+.buttons button {
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 0.95rem;
+    padding: 0.5rem 0.85rem;
+    border-radius: 8px;
+    color: #F7F7FA;
+}
+
+.btn-secundario {
+    background-color: #727273;
+}
+
+.btn-prosseguir {
+    background-color: #090D59;
+}
+
+a {
+    text-decoration: none;
+    color: #F7F7FA;
+    padding: 0.5rem 0.85rem;
+}
+

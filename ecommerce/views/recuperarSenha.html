@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/estilo/recuperar_senha.css">
+    <link rel="shortcut icon" href="../assets/images/favicon/bag-icon-2.svg" type="image/x-icon">
+    <title>Document</title>
+</head>
+<body>
+    <main class="container">
+        <header class="titulo">
+            <img src="../assets/images/icons/password-icon2.svg" alt="">
+            <div class="titulo">
+                <h1>Recuperar Senha</h1>
+                <p>Insira seu email para solicitar a recuperação de senha</p>
+            </div>
+        </header>
+        <form action="../controllers/recuperarSenhaController.php" method="post">
+            <div class="input-box">
+                <div class="input-box-label">
+                    <img src="../assets/images/icons/mail-icon.svg" alt="">
+                    <label for="email">E-mail</label>
+                </div>
+                <input type="email" name="email" id="email">
+            </div>
+            <div class="button">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

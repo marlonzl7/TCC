@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat';
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.head h2 {
+    margin: 3rem 0 2rem 0;
+    font-size: 1.75rem;
+    color: #010226;    
+}
+
+.head img {
+    margin-bottom: 4rem;
+}
+
+table {
+    width: 30vw;
+    border-collapse: collapse;
+}
+
+table thead {
+    background-color: #f1f1f1;
+}
+
+table th {
+    text-align: left;
+    padding: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+table th:nth-child(2),
+table td:nth-child(2) {
+    text-align: end; /* Alinha o subtotal */
+}
+
+table tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    vertical-align: middle;
+}
+
+table tbody td img {
+    width: 60px;
+    height: auto;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+table tbody td p {
+    display: block;
+}
+
+table tbody td p:first-of-type {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+}
+
+table tbody td p:last-of-type {
+    font-size: 14px;
+    color: #777;
+}
+
+table tbody td:last-of-type {
+    text-align: right;
+    font-size: 16px;
+    color: #333;
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+}
+
+.desc-produto {
+    display: flex;
+    flex-direction: column;
+}
+
+.total {
+    width: 30vw;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 4px;
+    color: #333;
+}
+
+.button {
+    margin: 2rem;
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+}
+
+.button button {
+    border: none;
+    cursor: pointer;
+    background-color: #090D59;
+    color: #f7f7fa;
+    padding: 0.75rem 2rem;
+    border-radius: 8px;
+    font-weight: 600;
+}

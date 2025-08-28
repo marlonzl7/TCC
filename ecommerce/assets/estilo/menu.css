@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #f2f2fa;
+}
+
+.menu {
+    background: #010440;
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 10% 0 5%;
+}
+
+.busca input {
+    height: 5vh;
+    width: 30vw;
+    padding: 0.8rem 1.2rem;
+    border-radius: 8px;
+    border: 1px solid #F0F0F5;
+    color: #4C4C4C;
+}
+
+.busca input:focus-visible {
+    border: 1px solid #151B8C;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav a {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.nav-itens {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.categorias {
+    background: #090D59;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    list-style: none;
+}
+
+.categorias a {
+    color: #f2f2fa;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+@media (max-width: 1650px) {
+    .menu {
+        padding: 0 5% 0 0;
+    }
+    .categorias {
+        height: 6vh;
+    }
+    .categorias a {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 1100px) {
+    
+}

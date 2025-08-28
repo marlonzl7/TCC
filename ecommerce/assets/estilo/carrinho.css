@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    h2 {
+      margin: 3rem 0 2.5rem 0;
+      text-align: center;
+      font-size: 1.75rem;
+      color: #010440;
+    }
+
+    .container {
+      width: 80%;
+      margin: 20px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      display: flex;
+    }
+
+    .cart-items {
+      width: 65%;
+      margin-right: 20px;
+    }
+
+    .cart-summary {
+      width: 30%;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+
+    th,
+    td {
+      padding: 10px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #f0f0f0;
+      font-weight: bold;
+    }
+
+    .product {
+      display: flex;
+    }
+
+    .product-desc {
+      margin-top: 0.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .product-image {
+      width: 75px;
+      height: 100px;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+
+    .categoria {
+      text-transform: capitalize;
+      color: #4C4C4C;
+    }
+
+    .quantity {
+      font-size: 1rem;
+      font-weight: 700;
+      padding: 8px;
+      background-color: #ddd;
+    }
+
+    .quantity-buttons {
+      display: flex;
+      align-items: center;
+      margin-left: 0.75rem;
+    }
+
+    .quantity-buttons button {
+      background-color: #ddd;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    .delete {
+      margin-left: 0.5rem;
+      border: none;
+      background: transparent;
+      cursor: pointer;
+    }
+
+    .delete img {
+      width: 28px;
+      transition: transform 0.2s;
+    }
+
+    .delete img:hover {
+      transform: scale(1.2);
+    }
+
+    .total {
+      font-size: 1.05rem;
+      text-align: right;
+      font-weight: bold;
+      margin-top: 20px;
+      color: #00169A;
+    }
+
+    .continuar {
+      background-color: #010440;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #f7f7fa;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    .buttons button {
+      background-color: #010440;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #f7f7fa;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .preco {
+      font-size: 1rem;
+      font-weight: 700;
+    }
+
+    #continuar {
+        background-color: #4C4C4C;
+    }
+/* pagina PEDIDOS */
+
+    .itens {
+      justify-content: space-between;
+      padding: 5% 5%;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    .itens p {
+      padding: 2px;
+      font-size: large;
+    }

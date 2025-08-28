@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/estilo/login.css">
+    <link rel="shortcut icon" href="../assets/images/favicon/bag-icon-2.svg" type="image/x-icon">
+    <title>Document</title>
+</head>
+<body>
+    <main class="container">
+        <article class="login">
+            <header class="login-header">
+                <img src="../assets/images/icons/marca.svg" alt="">
+            </header>
+            <div class="login-title">
+                <h2>Seja bem-vindo!</h2>
+                <h3>Faça seu login para continuar</h3>
+            </div>
+            <form action="../controllers/loginController.php" method="post">
+                <div class="input-group">
+                    <div class="input-box">
+                        <div class="input-box-label">
+                            <img src="../assets/images/icons/mail-icon.svg" alt="">
+                            <label for="email">Email</label>
+                        </div>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="input-box">
+                        <div class="input-box-label">
+                            <img src="../assets/images/icons/password-icon.svg" alt="">
+                            <label for="senha">Senha</label>
+                        </div>
+                        <input type="password" name="senha" id="senha">
+                    </div>
+                    <div class="esqueceu-senha">
+                        <a href="../views/recuperarSenha.html">Esqueceu sua Senha?</a>
+                    </div>
+                    <div class="buttons">
+                        <div class="cadastrar-button">
+                            <button><a class="btn-cadastrar" href="../views/cadastro.php">Cadastrar-se</a></button>
+                        </div>
+                        <div class="login-button">
+                            <button class="btn-login">Fazer Login</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </article>
+    </main>
+</body>
+</html>
