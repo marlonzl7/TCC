@@ -150,7 +150,7 @@ INSERT INTO Administrador (id_usuario, nome) VALUES (1, 'Principal');
 DELIMITER $$
 
 CREATE TRIGGER atualiza_quantidade_produto 
-AFTER INSERT ON itempedido
+AFTER INSERT ON ItemPedido
 FOR EACH ROW 
 BEGIN
     -- Atualiza a quantidade do produto com base no item inserido
